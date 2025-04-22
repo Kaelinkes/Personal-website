@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaelin Kesavjee - IT Professional</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #1a73e8; /* blue default */
+      --background-light: #f4f6f8;
+      --background-dark: #121212;
+      --text-light: #333;
+      --text-dark: #eee;
+    }
+
+    [data-theme="dark"] {
+      background-color: var(--background-dark);
+      color: var(--text-dark);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.2s ease, color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ddd;
+      transform: scale(1.1);
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    [data-theme="dark"] .section {
+      background: #1f1f1f;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      color: var(--primary-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .controls {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* Toggle Switch with Icons */
+    .toggle-wrapper {
+      position: relative;
+      display: inline-block;
+      width: 70px;
+      height: 34px;
+    }
+
+    .toggle-wrapper input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "\f185";
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      color: #fbc02d;
+      text-align: center;
+      line-height: 26px;
+      font-size: 14px;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(36px);
+      content: "\f186";
+      color: #90caf9;
+    }
+
+    .color-options {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .color-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 2px solid transparent;
+    }
+
+    .color-circle:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body data-theme="light">
+  <header>
+    <h1>Kaelin Kesavjee</h1>
+    <p>Information Technology Professional | Cloud Enthusiast | Problem Solver</p>
+    <nav>
+      <a href="#about"><i class="fas fa-user"></i> About</a>
+      <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+      <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="#certs"><i class="fas fa-certificate"></i> Certifications</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+    <div class="controls">
+      <label class="toggle-wrapper">
+        <input type="checkbox" id="themeToggle" onclick="toggleTheme()">
+        <span class="slider"></span>
+      </label>
+      <div class="color-options">
+        <div class="color-circle" style="background:#1a73e8" onclick="changeColor('#1a73e8')"></div>
+        <div class="color-circle" style="background:#28a745" onclick="changeColor('#28a745')"></div>
+        <div class="color-circle" style="background:#dc3545" onclick="changeColor('#dc3545')"></div>
+        <div class="color-circle" style="background:#6c757d" onclick="changeColor('#6c757d')"></div>
+        <div class="color-circle" style="background:#6f42c1" onclick="changeColor('#6f42c1')"></div>
+        <div class="color-circle" style="background:#e83e8c" onclick="changeColor('#e83e8c')"></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I’m Kaelin Kesavjee, a passionate IT student at Richfield College pursuing a BSc in Information Technology. I’m proficient in Python, SQL, Delphi, and web development, with certifications in AWS Cloud and Cybersecurity. I'm eager to contribute to real-world IT projects and aim to pursue Honours to further deepen my expertise.</p>
+  </section>
+
+  <section id="skills" class="section" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, SQL, Delphi, HTML, CSS, JavaScript</li>
+      <li>Problem Solving, Teamwork, Communication</li>
+      <li>Adaptability, Fast Learning, Attention to Detail</li>
+    </ul>
+  </section>
+
+  <section id="education" class="section" data-aos="fade-up">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Richfield College</strong> – BSc in Information Technology (2024–2026)</li>
+      <li><strong>Northcliff High School</strong> – High School Diploma (2019–2023)</li>
+    </ul>
+  </section>
+
+  <section id="certs" class="section" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <ul>
+      <li><a href="https://www.credly.com/badges/97b498f9-badd-4985-b50a-de6ee5bca9c4/public_url" target="_blank">AWS Cloud Foundations</a></li>
+      <li><a href="https://www.credly.com/badges/ffb88cd1-080e-4f25-8910-1729763abbb4/public_url" target="_blank">AWS Cloud Web Application Builder</a></li>
+      <li><a href="https://www.credly.com/badges/663f7264-5dca-40c3-b702-6442b4c62bcd/public_url" target="_blank">Cisco Cybersecurity</a></li>
+      <li><a href="https://www.credly.com/badges/76fe596b-f838-4085-92c9-73e462f440a1/linked_in?t=sr5rt5" target="_blank">Python Essentials 1</a></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:kaelinkesavjee@gmail.com">kaelinkesavjee@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/kaelin-kesavjee-a947b0243/" target="_blank">linkedin.com/in/kaelin-kesavjee</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kaelin Kesavjee. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleTheme() {
+      const body = document.body;
+      const currentTheme = body.getAttribute('data-theme');
+      body.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
+    }
+
+    function changeColor(color) {
+      document.documentElement.style.setProperty('--primary-color', color);
+    }
+  </script>
+</body>
+</html>
