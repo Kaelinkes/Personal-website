@@ -1,4 +1,5 @@
-#Kaelin's Portfolio Website
+#Kaelin's Portfolio Website.
+
 Welcome to my personal website repository! This website showcases my skills, education, experience, and contact information as a software engineer.
 
 Table of Contents
