@@ -1,7 +1,7 @@
-## Kaelin's Portfolio Website.
+# Kaelin's Portfolio Website.
 
 Welcome to my personal website repository! This website showcases my skills, education, experience, and contact information as a software engineer.
-# (Please note that this project is no longer being hosted and is outdated. A new project is being developed and will soon be hosted. Here is the link: https://github.com/Kaelinkes/Kaelinkes.github.io)
+<b>(Please note that this project is no longer being hosted and is outdated. A new project is being developed and will soon be hosted. Here is the link: https://github.com/Kaelinkes/Kaelinkes.github.io)<b/>
 
 Table of Contents
 About
