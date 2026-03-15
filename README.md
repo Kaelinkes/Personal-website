@@ -71,4 +71,4 @@ The website can be used to explore my skills and projects. You can also contact 
 Contributions are welcome! If you'd like to contribute, please fork the repository, make your changes, and submit a pull request. All contributions must adhere to the code of conduct.
 
 ## Hosting 
-This project is currently being hosted on netlify 
+This project used being hosted on netlify, however is no longer being hosted.
