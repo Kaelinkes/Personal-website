@@ -68,7 +68,7 @@ Open index.html in a browser to view the website locally.
 The website can be used to explore my skills and projects. You can also contact me via the information on the site. It serves as a digital representation of my professional portfolio.
 
 ## Contributing
-Contributions are welcome! If you'd like to contribute, please fork the repository, make your changes, and submit a pull request. All contributions must adhere to the code of conduct.
+Contributions are no longer welcome! As this is an old project with no devlepment or hosting
 
 ## Hosting 
 This project used being hosted on netlify, however is no longer being hosted.
